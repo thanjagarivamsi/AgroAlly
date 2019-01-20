@@ -1,0 +1,463 @@
+
+                /**********Sample Codes for APP**********/ 
+
+
+
+
+
+
+
+     /**********Requesting API call for dealers crop information**********/ 
+
+
+    val textView = findViewById<TextView>(R.id.text)
+    // ...
+
+    // Instantiate the RequestQueue.
+    val queue = Volley.newRequestQueue(this)
+    val url = "http://www.localhost/AgroApi/v1/Api.php?apicall=cropname+price"
+
+
+
+
+
+
+
+      /********** Request a string response from the provided URL.**********/
+
+
+    val stringRequest = StringRequest(Request.Method.GET, url,
+        Response.Listener<String> { 
+    response ->textView.text = "Response is: ${response.substring(0, 500)}"
+            },
+        Response.ErrorListener { textView.text = "That didn't work!" })
+
+    // Add the request to the RequestQueue.
+    queue.add(stringRequest)
+
+
+
+
+
+
+
+         /**********Code for Backend connection of database**********/
+
+
+
+    $host="localhost";
+    $user="root";
+    $password="";
+    $db="demo";
+ 
+    mysql_connect($host,$user,$password);
+    mysql_select_db($db);
+ 
+    if(isset($_POST['username'])){
+    
+        $uname=$_POST['username'];
+        $password=$_POST['password'];
+    
+        $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
+        
+        $result=mysql_query($sql);
+    
+        if(mysql_num_rows($result)==1){
+            echo " You Have Successfully Logged in";
+           exit();
+        }
+        else{
+            echo " You Have Entered Incorrect Password";
+            exit();
+        }
+        
+    }
+    ?>
+
+
+
+
+
+
+
+            /**********Sample code for Dealers Login Page**********/ 
+
+    <!DOCTYPE html>
+    <html>
+    
+        <head>
+            <title>
+                startScreen
+            </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="../css/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="../css/theme/material-design/material-design.css" rel="stylesheet" />
+        <link href="../libs/jquerymobile/1.4.5/jquery.mobile.structure-1.4.5.css" rel="stylesheet"
+        />
+        <link type="text/css" rel="stylesheet" href="../css/CSS1.css" />
+        <link type="text/css" rel="stylesheet" href="../css/bootStrap.css" />
+        <link type="text/css" rel="stylesheet" href="../css/BootStra.css" />
+        <script type="text/javascript" src="../libs/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="../libs/store/json2.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="../libs/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.js">
+        </script>
+        <script type="text/javascript" src="../libs/apperyio/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="../libs/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="../libs/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/appery.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/login.js">
+        </script>
+        <script type="text/javascript" src="../libs/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="../get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="../cordova.js">
+        </script>
+        <link href="../libs/apperyio/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../js/services/model.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript1.js">
+        </script>
+        <script type="text/javascript" src="../js/JavaScript2.js">
+        </script>
+        <script type="text/javascript" src="../js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="d" name="mobileheader" id="startScreen_mobileheader" class="startScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Login
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="startScreen_mobilecontainer" name="mobilecontainer"
+            class="startScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="e">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobiletextinput_30 -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_30 ">
+                    <input type="text" name="mobiletextinput_30" dsid="mobiletextinput_30" value=""
+                    placeholder="Username" id="startScreen_mobiletextinput_30" tabindex="11" multiple
+                    data-theme="e" class="startScreen_mobiletextinput_30" />
+                </div>
+                <!-- mobiletextinput_31 -->
+                <div data-role="fieldcontain" class="startScreen_mobiletextinput_31 ">
+                    <input type="password" name="mobiletextinput_31" dsid="mobiletextinput_31" value=""
+                    placeholder="Password" id="startScreen_mobiletextinput_31" tabindex="12" multiple
+                    data-theme="e" class="startScreen_mobiletextinput_31" />
+                </div>
+                <!-- mobilebutton_32 --><!--
+                --><a data-role="button" name="mobilebutton_32" dsid="mobilebutton_32" class="btn  startScreen_mobilebutton_32"
+                id="startScreen_mobilebutton_32" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="a" tabindex="13">
+                Login
+                </a><!--
+                --><!-- mobilebutton_33 --><!--
+                --><a data-role="button" name="mobilebutton_33" dsid="mobilebutton_33" class="btn  startScreen_mobilebutton_33"
+                id="startScreen_mobilebutton_33" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="e" tabindex="14">
+                Register
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="startScreen_mobilefooter" data-theme="b">
+                </div>
+            </div>
+        </body>
+
+    </html
+
+
+
+
+
+
+
+                      /**********5)Plugins Code**********/
+
+
+    Farmers Application Main Page  Code 
+    <!DOCTYPE html>
+    <html>
+    
+        <head>
+            <title>
+                Agrotips
+            </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CSS1.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Agrotips" id="Agrotips" class="type-interior"
+        data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="a" name="mobileheader" id="Agrotips_mobileheader" class="Agrotips_mobileheader">
+                <h1 dsid="mobileheader">
+                    Caption
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Agrotips_mobilecontainer" name="mobilecontainer" class="Agrotips_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="Agrotips.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Agrotips.js">
+                </script>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Agrotips_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Agrotips_mobilefooter" data-theme="a">
+                </div>
+            </div>
+        </body>
+
+    </html>
+
+
+
+
+
+
+
+              /**********Android Login Page**********/ 
+
+
+                       /*****Layout Frame*****/
+
+
+   <EditText
+      android:id = "@+id/editText2"
+      android:layout_width = "wrap_content"
+      android:layout_height = "wrap_content"
+      android:inputType = "textPassword" />
+
+   <EditText
+      android:id = "@+id/editText1"
+      android:layout_width = "wrap_content"
+      android:layout_height = "wrap_content"
+   />
+
+
+
+
+                      /*****Main Activity*****/
+
+
+   public class MainActivity extends Activity  {
+      Button b1,b2;
+      EditText ed1,ed2;
+
+      TextView tx1;
+      int counter = 3;
+
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+
+      b1 = (Button)findViewById(R.id.button);
+      ed1 = (EditText)findViewById(R.id.editText);
+      ed2 = (EditText)findViewById(R.id.editText2);
+
+      b2 = (Button)findViewById(R.id.button2);
+      tx1 = (TextView)findViewById(R.id.textView3);
+      tx1.setVisibility(View.GONE);
+
+      b1.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            if(ed1.getText().toString().equals("admin") &&
+               ed2.getText().toString().equals("admin")) {
+                  Toast.makeText(getApplicationContext(),
+                     "Redirecting...",Toast.LENGTH_SHORT).show();
+               }else{
+                  Toast.makeText(getApplicationContext(), "Wrong 
+                     Credentials",Toast.LENGTH_SHORT).show();
+
+                  tx1.setVisibility(View.VISIBLE);
+                  tx1.setBackgroundColor(Color.RED);
+                  counter--;
+                  tx1.setText(Integer.toString(counter));
+
+                  if (counter == 0) {
+                     b1.setEnabled(false);
+                  }
+               }
+         }
+      });
+
+      b2.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            finish();
+            }
+         });
+      }
+   }
+
+
+
+
+
+
+
