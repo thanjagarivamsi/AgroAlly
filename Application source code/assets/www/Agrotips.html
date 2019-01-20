@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Agrotips
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CSS1.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Agrotips" id="Agrotips" class="type-interior"
+        data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-add-back-btn="false"
+            data-back-btn-text="Back" data-theme="a" name="mobileheader" id="Agrotips_mobileheader"
+            class="Agrotips_mobileheader">
+                <h1 dsid="mobileheader">
+                    AgroAlly
+                </h1>
+                <!-- mobilebutton_11 --><!--
+                --><a data-role="button" name="mobilebutton_11" dsid="mobilebutton_11" class="Agrotips_mobilebutton_11 ui-btn-left"
+                style='min-height:16px; ' id="Agrotips_mobilebutton_11" data-corners="false" data-icon="bars"
+                data-iconpos="left" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="a" tabindex="2">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Agrotips_mobilecontainer" name="mobilecontainer" class="bo  Agrotips_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="Agrotips.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Agrotips.js">
+                </script>
+                <!-- spacer_21 -->
+                <div id="Agrotips_spacer_21" data-role="appery_spacer" dsid="spacer_21" class='mobilespacer Agrotips_spacer_21'>
+                </div>
+                <!-- mobileworkarea_18 -->
+                <div class="Agrotips_mobileworkarea_18 Agrotips_mobileworkarea_18">
+                    <!-- spacer_22 -->
+                    <div id="Agrotips_spacer_22" data-role="appery_spacer" dsid="spacer_22" class='mobilespacer Agrotips_spacer_22'>
+                    </div>
+                    <!-- html_23 -->
+                    <div data-role="appery_html" name="html_23" dsid="html_23" id="Agrotips_html_23"
+                    class="Agrotips_html_23">
+                        <h3>
+                            Tips that help in good harvest
+                        </h3>
+                        <div>
+                            <ul type="disc">
+                                <li>
+                                    Procure certified seed of High Yielding Varieties/Hybrids recommended for the area
+                                    from authorized agencies/dealers,
+                                </li>
+                                <li>
+                                    Treat the seed with recommended fungicides for minimizing the disease incidence.
+                                </li>
+                                <li>
+                                    Sow the pre-germinated seed of paddy in nursery bed as per guidelines prescribed
+                                    by the State Agricultural University. Use recommended doses of farm yard manure,
+                                    macro and micro nutrients in nursery beds at the time of sowing.
+                                </li>
+                                <li>
+                                    Nursery raising for planting systems like SRI, mechanical and general practice should
+                                    be according to scientific recommendation.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- html_24 -->
+                    <div data-role="appery_html" name="html_24" dsid="html_24" id="Agrotips_html_24"
+                    class="Agrotips_html_24">
+                        <h3>
+                            Assistance to farmers from NFSM
+                        </h3>
+                        <div>
+                            <ul type="disc">
+                                <li>
+                                    Assistance for distribution of certified seed of HYV @ Rs. 500/quintal or 50% of
+                                    the cost whichever is less.
+                                </li>
+                                <li>
+                                    Assistance for distribution of hybrid seed of rice @ Rs. 2000 per quintal or 50%
+                                    of the cost whichever is less.
+                                </li>
+                                <li>
+                                    Assistance for production of hybrid seed of rice @ Rs. 1000 per quintal.
+                                </li>
+                                <li>
+                                    Assistance for micro-nutrients @ Rs. 500 per ha or 50% of the cost whichever is
+                                    less.
+                                </li>
+                                <li>
+                                    Assistance for liming the acidic soils @ Rs. 500 per ha or 50% of the cost whichever
+                                    is less.
+                                </li>
+                                <li>
+                                    Assistance for conoweeder and other implements @ Rs. 3000 or 50% of the cost of
+                                    these implements whichever is less.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- panel_2 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="push" id="Agrotips_panel_2"
+            class="img  Agrotips_panel_2" name="panel_2" dsid="panel_2" data-theme="a">
+                <!-- mobileimage_3 -->
+                <img class="Agrotips_mobileimage_3" src="files/views/assets/image/telanganalogo.png"
+                id="Agrotips_mobileimage_3" dsid="mobileimage_3" name="mobileimage_3" />
+                <!-- mobilelabel_20 -->
+                <div name="mobilelabel_20" id="Agrotips_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                class="font  Agrotips_mobilelabel_20">
+                    AgroAlly
+                </div>
+                <!-- Crops --><!--
+                --><a data-role="button" name="Crops" dsid="Crops" class="btn  Agrotips_Crops" id="Agrotips_Crops"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="c" tabindex="4">
+                crops
+                </a><!--
+                --><!-- Insurance --><!--
+                --><a data-role="button" name="Insurance" dsid="Insurance" class="btn  Agrotips_Insurance"
+                id="Agrotips_Insurance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="5">
+                Insurance
+                </a><!--
+                --><!-- Agrotips --><!--
+                --><a data-role="button" name="Agrotips" dsid="Agrotips" class="btn  Agrotips_Agrotips"
+                id="Agrotips_Agrotips" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="6">
+                Agrotips
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

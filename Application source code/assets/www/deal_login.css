@@ -1,0 +1,135 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#deal_login_mobilebutton_11 {
+
+}
+.ui-btn.deal_login_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.deal_login_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.deal_login_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.deal_login_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* spacer_40 */
+.deal_login_spacer_40 {
+	width: 260px; height: 42px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobiletextinput_22 */
+.deal_login_mobiletextinput_22 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobiletextinput_23 */
+.deal_login_mobiletextinput_23 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegrid_33 */
+.deal_login_mobilegrid_33 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.deal_login_mobilegrid_33_wrapper {
+
+}
+.deal_login_mobilegrid_33 > tr > td {
+	vertical-align: top;
+}
+.deal_login_mobilegrid_33_row_0, .deal_login_mobilegrid_33_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_34 */
+.deal_login_mobilegridcell_34 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deal_login_mobilegridcell_34 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_38 */
+#deal_login_mobilebutton_38 {
+
+}
+.ui-btn.deal_login_mobilebutton_38 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_35 */
+.deal_login_mobilegridcell_35 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deal_login_mobilegridcell_35 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilebutton_39 */
+#deal_login_mobilebutton_39 {
+
+}
+.ui-btn.deal_login_mobilebutton_39 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.deal_login_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.deal_login_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.deal_login_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.deal_login_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 203px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.deal_login_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#deal_login_Crops {
+
+}
+.ui-btn.deal_login_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#deal_login_Insurance {
+
+}
+.ui-btn.deal_login_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#deal_login_Agrotips {
+
+}
+.ui-btn.deal_login_Agrotips {
+	margin: 4px 5px 4px 5px;
+}

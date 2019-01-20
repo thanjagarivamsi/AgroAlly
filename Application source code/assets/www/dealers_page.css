@@ -1,0 +1,89 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#dealers_page_mobilebutton_11 {
+
+}
+.ui-btn.dealers_page_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.dealers_page_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.dealers_page_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.dealers_page_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilelabel_22 */
+.dealers_page_mobilelabel_22 {
+	text-decoration: none; font-weight: normal; font-style: italic; color: #d94343; text-align: left; font-family: Gisha; font-size: 24px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobiletextinput_23 */
+.dealers_page_mobiletextinput_23 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_24 */
+#dealers_page_mobilebutton_24 {
+
+}
+.ui-btn.dealers_page_mobilebutton_24 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.dealers_page_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.dealers_page_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.dealers_page_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.dealers_page_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 203px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.dealers_page_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#dealers_page_Crops {
+
+}
+.ui-btn.dealers_page_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#dealers_page_Insurance {
+
+}
+.ui-btn.dealers_page_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#dealers_page_Agrotips {
+
+}
+.ui-btn.dealers_page_Agrotips {
+	margin: 4px 5px 4px 5px;
+}

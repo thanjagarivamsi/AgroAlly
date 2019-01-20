@@ -1,0 +1,99 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#sel_dist_mobilebutton_11 {
+
+}
+.ui-btn.sel_dist_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.sel_dist_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.sel_dist_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.sel_dist_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* spacer_23 */
+.sel_dist_spacer_23 {
+	width: 260px; height: 85px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilelabel_21 */
+.sel_dist_mobilelabel_21 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 18px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* html_22 */
+.sel_dist_html_22 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 250px; height: 50px;
+}
+div.sel_dist_html_22 {
+	overflow: auto;
+}
+/* getinfo2 */
+#sel_dist_getinfo2 {
+
+}
+.ui-btn.sel_dist_getinfo2 {
+	margin: 4px 5px 4px 200px;
+}
+/* mobilefooter */
+.sel_dist_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.sel_dist_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.sel_dist_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.sel_dist_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 203px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.sel_dist_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#sel_dist_Crops {
+
+}
+.ui-btn.sel_dist_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#sel_dist_Insurance {
+
+}
+.ui-btn.sel_dist_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#sel_dist_Agrotips {
+
+}
+.ui-btn.sel_dist_Agrotips {
+	margin: 4px 5px 4px 5px;
+}

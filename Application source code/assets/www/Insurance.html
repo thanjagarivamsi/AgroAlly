@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Insurance
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CSS1.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Insurance" id="Insurance"
+        class="type-interior" data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-add-back-btn="false"
+            data-back-btn-text="Back" data-theme="a" name="mobileheader" id="Insurance_mobileheader"
+            class="Insurance_mobileheader">
+                <h1 dsid="mobileheader">
+                    Insurance
+                </h1>
+                <!-- mobilebutton_11 --><!--
+                --><a data-role="button" name="mobilebutton_11" dsid="mobilebutton_11" class="Insurance_mobilebutton_11 ui-btn-left"
+                style='min-height:16px; ' id="Insurance_mobilebutton_11" data-corners="false" data-icon="bars"
+                data-iconpos="left" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="a" tabindex="2">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Insurance_mobilecontainer" name="mobilecontainer" class="bo  Insurance_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="Insurance.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Insurance.js">
+                </script>
+                <!-- spacer_21 -->
+                <div id="Insurance_spacer_21" data-role="appery_spacer" dsid="spacer_21" class='mobilespacer Insurance_spacer_21'>
+                </div>
+                <!-- mobileworkarea_18 -->
+                <div class="Insurance_mobileworkarea_18 Insurance_mobileworkarea_18">
+                    <!-- spacer_33 -->
+                    <div id="Insurance_spacer_33" data-role="appery_spacer" dsid="spacer_33" class='mobilespacer Insurance_spacer_33'>
+                    </div>
+                    <!-- mobilelabel_30 -->
+                    <div name="mobilelabel_30" id="Insurance_mobilelabel_30" dsid="mobilelabel_30" data-role="appery_label"
+                    class="font  Insurance_mobilelabel_30">
+                        Paddy Insurance:
+                    </div>
+                    <!-- pop1 -->
+                    <div data-role="popup" name="pop1" dsid="pop1" id="Insurance_pop1" class="Insurance_pop1"
+                    data-corners="true" data-dismissible="true" data-overlay-theme="" data-theme="" data-shadow="true"
+                    data-tolerance="30,15,30,15">
+                        <div class="ui-popup-content-wrapper">
+                            <!-- spacer_27 -->
+                            <div id="Insurance_spacer_27" data-role="appery_spacer" dsid="spacer_27" class='mobilespacer Insurance_spacer_27'>
+                            </div>
+                            <!-- mobilelabel_28 -->
+                            <div name="mobilelabel_28" id="Insurance_mobilelabel_28" dsid="mobilelabel_28" data-role="appery_label"
+                            class="Insurance_mobilelabel_28">
+                                insurance is not provided yet.
+                            </div>
+                            <!-- spacer_29 -->
+                            <div id="Insurance_spacer_29" data-role="appery_spacer" dsid="spacer_29" class='mobilespacer Insurance_spacer_29'>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- html_32 -->
+                    <div data-role="appery_html" name="html_32" dsid="html_32" id="Insurance_html_32"
+                    class="Insurance_html_32">
+                        <p>
+                            The State government wanted amendments to the existing Central government crop insurance
+                            policy under &ldquo;Pradhan Mantri Fasal Bima Yojana&rsquo; to provide farmers with
+                            insurance support during crop damage.
+                        </p>
+                        <p>
+                            The Union government had launched the insurance scheme across the country, subsequently
+                            the State government notified the scheme and asked farmers to avail the opportunity
+                            by paying premium. As per the Centre&rsquo;s guidelines, farmers who opt for crop
+                            loans from banks and co-operate credit societies should be brought under PMFBY insurance
+                            coverage. However, insurance is optional for farmers, who didn&rsquo;t take loans.
+                        </p>
+                        <p>
+                            On the flipside, farmers are not showing interest to opt for crop insurance. According
+                            to the Agriculture Department, only 20-30 per cent farmers availed crop insurance
+                            during 2015-16.
+                        </p>
+                        <p>
+                            Around 13 lakh farmers paid premium during 2015-16 out of 55 lakh farmers in the
+                            State. The reason can be attributed to the stringent guidelines which would not help
+                            farmers.&nbsp; &ldquo;Instead of treating farmers as a unit while sanctioning claims,
+                            the PMFBY scheme is considering entire village as a unit, which is not attracting
+                            the farmers to go for the scheme,&rdquo; said Agriculture Minister Pocharam Srinivas
+                            Reddy to Telangana Today. He said the State government would contribute a major portion
+                            of funds and collect a nominal premium from farmers but they were not willing to
+                            come forward.
+                        </p>
+                        <p>
+                            The Assembly also unanimously approved amendments to PMFBY scheme and sent it to
+                            the Central government which has been pending for a long time, Minister said.&nbsp;
+                            Chief Minister K Chandrashekhar Rao wanted every farmer should be benefited with
+                            the schemes, but PMFBY is not helping farmers due to considering entire village as
+                            a unit to settling claims. Hence, we decided to mount pressure on the Central government
+                            once again to alter the guidelines, said Agriculture Secretary C Parathasarathi.
+                        </p>
+                        <p>
+                            &nbsp;
+                        </p>
+                    </div>
+                    <!-- getinfo_insurance --><!--
+                    --><a data-role="button" name="getinfo_insurance" dsid="getinfo_insurance" class="Insurance_getinfo_insurance"
+                    id="Insurance_getinfo_insurance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="a"
+                    tabindex="8">
+                    Get info..
+                    </a>
+                </div>
+            </div>
+            <!-- panel_2 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="push" id="Insurance_panel_2"
+            class="img  Insurance_panel_2" name="panel_2" dsid="panel_2" data-theme="a">
+                <!-- mobileimage_3 -->
+                <img class="Insurance_mobileimage_3" src="files/views/assets/image/telanganalogo.png"
+                id="Insurance_mobileimage_3" dsid="mobileimage_3" name="mobileimage_3" />
+                <!-- mobilelabel_20 -->
+                <div name="mobilelabel_20" id="Insurance_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                class="font  Insurance_mobilelabel_20">
+                    AgroAlly
+                </div>
+                <!-- Crops --><!--
+                --><a data-role="button" name="Crops" dsid="Crops" class="btn  Insurance_Crops" id="Insurance_Crops"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="c" tabindex="4">
+                crops
+                </a><!--
+                --><!-- Insurance --><!--
+                --><a data-role="button" name="Insurance" dsid="Insurance" class="btn  Insurance_Insurance"
+                id="Insurance_Insurance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="5">
+                Insurance
+                </a><!--
+                --><!-- Agrotips --><!--
+                --><a data-role="button" name="Agrotips" dsid="Agrotips" class="btn  Insurance_Agrotips"
+                id="Insurance_Agrotips" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="6">
+                Agrotips
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

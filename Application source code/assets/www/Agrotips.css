@@ -1,0 +1,94 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#Agrotips_mobilebutton_11 {
+
+}
+.ui-btn.Agrotips_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.Agrotips_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.Agrotips_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.Agrotips_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* spacer_22 */
+.Agrotips_spacer_22 {
+	width: 260px; height: 127px;
+	margin: 4px 0px 4px 0px;
+}
+/* html_23 */
+.Agrotips_html_23 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 100%; height: 100%;
+}
+div.Agrotips_html_23 {
+	overflow: auto;
+}
+/* html_24 */
+.Agrotips_html_24 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 100%; height: 100%;
+}
+div.Agrotips_html_24 {
+	overflow: auto;
+}
+/* mobilefooter */
+.Agrotips_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.Agrotips_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.Agrotips_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.Agrotips_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 178px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.Agrotips_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#Agrotips_Crops {
+
+}
+.ui-btn.Agrotips_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#Agrotips_Insurance {
+
+}
+.ui-btn.Agrotips_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#Agrotips_Agrotips {
+
+}
+.ui-btn.Agrotips_Agrotips {
+	margin: 4px 5px 4px 5px;
+}

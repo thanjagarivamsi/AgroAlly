@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            deler_det
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CSS1.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="deler_det" id="deler_det"
+        class="type-interior" data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-add-back-btn="false"
+            data-back-btn-text="Back" data-theme="a" name="mobileheader" id="deler_det_mobileheader"
+            class="deler_det_mobileheader">
+                <h1 dsid="mobileheader">
+                    &nbsp;
+                </h1>
+                <!-- mobilebutton_11 --><!--
+                --><a data-role="button" name="mobilebutton_11" dsid="mobilebutton_11" class="deler_det_mobilebutton_11 ui-btn-left"
+                style='min-height:16px; ' id="deler_det_mobilebutton_11" data-corners="false" data-icon="bars"
+                data-iconpos="left" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="a" tabindex="2">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="deler_det_mobilecontainer" name="mobilecontainer" class="bo  deler_det_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="deler_det.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="deler_det.js">
+                </script>
+                <!-- spacer_21 -->
+                <div id="deler_det_spacer_21" data-role="appery_spacer" dsid="spacer_21" class='mobilespacer deler_det_spacer_21'>
+                </div>
+                <!-- mobileworkarea_18 -->
+                <div class="deler_det_mobileworkarea_18 deler_det_mobileworkarea_18">
+                    <!-- spacer_75 -->
+                    <div id="deler_det_spacer_75" data-role="appery_spacer" dsid="spacer_75" class='mobilespacer deler_det_spacer_75'>
+                    </div>
+                    <!-- mobilegrid_21 -->
+                    <div class="deler_det_mobilegrid_21_wrapper" data-wrapper-for="mobilegrid_21">
+                        <table id="deler_det_mobilegrid_21" class="deler_det_mobilegrid_21" dsid="mobilegrid_21"
+                        name="mobilegrid_21" cellpadding=0 cellspacing=0>
+                            <col style="width:151px;" />
+                            <tr class="deler_det_mobilegrid_21_row_0">
+                                <!-- mobilegridcell_22 -->
+                                <td id="deler_det_mobilegridcell_22" name="mobilegridcell_22" class="deler_det_mobilegridcell_22"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilegrid_46 -->
+                                        <div class="deler_det_mobilegrid_46_wrapper" data-wrapper-for="mobilegrid_46">
+                                            <table id="deler_det_mobilegrid_46" class="deler_det_mobilegrid_46" dsid="mobilegrid_46"
+                                            name="mobilegrid_46" cellpadding=0 cellspacing=0>
+                                                <col style="width:auto;" />
+                                                <col style="width:auto;" />
+                                                <tr class="deler_det_mobilegrid_46_row_0">
+                                                    <!-- mobilegridcell_47 -->
+                                                    <td id="deler_det_mobilegridcell_47" name="mobilegridcell_47" class="deler_det_mobilegridcell_47"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- price -->
+                                                            <div name="price" id="deler_det_price" dsid="price" data-role="appery_label" class="deler_det_price">
+                                                                Price :
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_48 -->
+                                                    <td id="deler_det_mobilegridcell_48" name="mobilegridcell_48" class="deler_det_mobilegridcell_48"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_52 -->
+                                                            <div name="mobilelabel_52" id="deler_det_mobilelabel_52" dsid="mobilelabel_52" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_52">
+                                                                Rs.12,000/-
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="deler_det_mobilegrid_46_row_1">
+                                                    <!-- mobilegridcell_49 -->
+                                                    <td id="deler_det_mobilegridcell_49" name="mobilegridcell_49" class="deler_det_mobilegridcell_49"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_53 -->
+                                                            <div name="mobilelabel_53" id="deler_det_mobilelabel_53" dsid="mobilelabel_53" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_53">
+                                                                Name:
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_50 -->
+                                                    <td id="deler_det_mobilegridcell_50" name="mobilegridcell_50" class="deler_det_mobilegridcell_50"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_54 -->
+                                                            <div name="mobilelabel_54" id="deler_det_mobilelabel_54" dsid="mobilelabel_54" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_54">
+                                                                R.Ravi Kumar
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- mobilebutton_35 --><!--
+                                        --><a data-role="button" name="mobilebutton_35" dsid="mobilebutton_35" class="deler_det_mobilebutton_35"
+                                        id="deler_det_mobilebutton_35" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="a"
+                                        tabindex="8">
+                                        get details
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="deler_det_mobilegrid_21_row_1">
+                                <!-- mobilegridcell_24 -->
+                                <td id="deler_det_mobilegridcell_24" name="mobilegridcell_24" class="deler_det_mobilegridcell_24"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- spacer_73 -->
+                                        <div id="deler_det_spacer_73" data-role="appery_spacer" dsid="spacer_73" class='mobilespacer deler_det_spacer_73'>
+                                        </div>
+                                        <!-- mobilegrid_55 -->
+                                        <div class="deler_det_mobilegrid_55_wrapper" data-wrapper-for="mobilegrid_55">
+                                            <table id="deler_det_mobilegrid_55" class="deler_det_mobilegrid_55" dsid="mobilegrid_55"
+                                            name="mobilegrid_55" cellpadding=0 cellspacing=0>
+                                                <col style="width:auto;" />
+                                                <col style="width:auto;" />
+                                                <tr class="deler_det_mobilegrid_55_row_0">
+                                                    <!-- mobilegridcell_56 -->
+                                                    <td id="deler_det_mobilegridcell_56" name="mobilegridcell_56" class="deler_det_mobilegridcell_56"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_60 -->
+                                                            <div name="mobilelabel_60" id="deler_det_mobilelabel_60" dsid="mobilelabel_60" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_60">
+                                                                Price :
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_57 -->
+                                                    <td id="deler_det_mobilegridcell_57" name="mobilegridcell_57" class="deler_det_mobilegridcell_57"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_61 -->
+                                                            <div name="mobilelabel_61" id="deler_det_mobilelabel_61" dsid="mobilelabel_61" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_61">
+                                                                Rs.13500/-
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="deler_det_mobilegrid_55_row_1">
+                                                    <!-- mobilegridcell_58 -->
+                                                    <td id="deler_det_mobilegridcell_58" name="mobilegridcell_58" class="deler_det_mobilegridcell_58"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_62 -->
+                                                            <div name="mobilelabel_62" id="deler_det_mobilelabel_62" dsid="mobilelabel_62" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_62">
+                                                                Name :
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_59 -->
+                                                    <td id="deler_det_mobilegridcell_59" name="mobilegridcell_59" class="deler_det_mobilegridcell_59"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_63 -->
+                                                            <div name="mobilelabel_63" id="deler_det_mobilelabel_63" dsid="mobilelabel_63" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_63">
+                                                                R.vamshidhar
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- mobilebutton_37 --><!--
+                                        --><a data-role="button" name="mobilebutton_37" dsid="mobilebutton_37" class="deler_det_mobilebutton_37"
+                                        id="deler_det_mobilebutton_37" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="a"
+                                        tabindex="10">
+                                        get details
+                                        </a><!--
+                                        --><!-- spacer_74 -->
+                                        <div id="deler_det_spacer_74" data-role="appery_spacer" dsid="spacer_74" class='mobilespacer deler_det_spacer_74'>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="deler_det_mobilegrid_21_row_2">
+                                <!-- mobilegridcell_43 -->
+                                <td id="deler_det_mobilegridcell_43" name="mobilegridcell_43" class="deler_det_mobilegridcell_43"
+                                colspan=1 rowspan=1>
+                                    <div class="cell-wrapper">
+                                        <!-- mobilegrid_64 -->
+                                        <div class="deler_det_mobilegrid_64_wrapper" data-wrapper-for="mobilegrid_64">
+                                            <table id="deler_det_mobilegrid_64" class="deler_det_mobilegrid_64" dsid="mobilegrid_64"
+                                            name="mobilegrid_64" cellpadding=0 cellspacing=0>
+                                                <col style="width:auto;" />
+                                                <col style="width:auto;" />
+                                                <tr class="deler_det_mobilegrid_64_row_0">
+                                                    <!-- mobilegridcell_65 -->
+                                                    <td id="deler_det_mobilegridcell_65" name="mobilegridcell_65" class="deler_det_mobilegridcell_65"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_69 -->
+                                                            <div name="mobilelabel_69" id="deler_det_mobilelabel_69" dsid="mobilelabel_69" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_69">
+                                                                Price :
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_66 -->
+                                                    <td id="deler_det_mobilegridcell_66" name="mobilegridcell_66" class="deler_det_mobilegridcell_66"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_70 -->
+                                                            <div name="mobilelabel_70" id="deler_det_mobilelabel_70" dsid="mobilelabel_70" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_70">
+                                                                Rs.14520/-
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="deler_det_mobilegrid_64_row_1">
+                                                    <!-- mobilegridcell_67 -->
+                                                    <td id="deler_det_mobilegridcell_67" name="mobilegridcell_67" class="deler_det_mobilegridcell_67"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_71 -->
+                                                            <div name="mobilelabel_71" id="deler_det_mobilelabel_71" dsid="mobilelabel_71" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_71">
+                                                                Name :
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- mobilegridcell_68 -->
+                                                    <td id="deler_det_mobilegridcell_68" name="mobilegridcell_68" class="deler_det_mobilegridcell_68"
+                                                    colspan=1 rowspan=1>
+                                                        <div class="cell-wrapper">
+                                                            <!-- mobilelabel_72 -->
+                                                            <div name="mobilelabel_72" id="deler_det_mobilelabel_72" dsid="mobilelabel_72" data-role="appery_label"
+                                                            class="deler_det_mobilelabel_72">
+                                                                D.Damodhar
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!-- mobilebutton_45 --><!--
+                                        --><a data-role="button" name="mobilebutton_45" dsid="mobilebutton_45" class="deler_det_mobilebutton_45"
+                                        id="deler_det_mobilebutton_45" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                        x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="a"
+                                        tabindex="12">
+                                        get details
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- panel_2 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="push" id="deler_det_panel_2"
+            class="img  deler_det_panel_2" name="panel_2" dsid="panel_2" data-theme="a">
+                <!-- mobileimage_3 -->
+                <img class="deler_det_mobileimage_3" src="files/views/assets/image/telanganalogo.png"
+                id="deler_det_mobileimage_3" dsid="mobileimage_3" name="mobileimage_3" />
+                <!-- mobilelabel_20 -->
+                <div name="mobilelabel_20" id="deler_det_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                class="font  deler_det_mobilelabel_20">
+                    AgroAlly
+                </div>
+                <!-- Crops --><!--
+                --><a data-role="button" name="Crops" dsid="Crops" class="btn  deler_det_Crops" id="deler_det_Crops"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="c" tabindex="4">
+                Crops
+                </a><!--
+                --><!-- Insurance --><!--
+                --><a data-role="button" name="Insurance" dsid="Insurance" class="btn  deler_det_Insurance"
+                id="deler_det_Insurance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="5">
+                Insurance
+                </a><!--
+                --><!-- Agrotips --><!--
+                --><a data-role="button" name="Agrotips" dsid="Agrotips" class="btn  deler_det_Agrotips"
+                id="deler_det_Agrotips" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="6">
+                Agrotips
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

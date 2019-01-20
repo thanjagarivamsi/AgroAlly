@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            crops
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready data:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="files/views/assets/css/CSS1.css" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-ajaxTransport.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                else if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                else if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g))
+                {
+                    $.mobile.hashListeningEnabled = false;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/q/q.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/EventEmitter.js/EventEmitter.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/tv4/tv4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/dist/localforage.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-setitems/localforage-setitems.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/localforage/plugins/localforage-find/localforage-find.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/crypto-js-md5/crypto-js-md5.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/moment/moment.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/underscore-query/underscore-query.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/offline/offline.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/ms_sdk_bundle/client-sdk.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/login.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="crops" id="crops" class="type-interior"
+        data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-add-back-btn="false"
+            data-back-btn-text="Back" data-theme="a" name="mobileheader" id="crops_mobileheader"
+            class="crops_mobileheader">
+                <h1 dsid="mobileheader">
+                    crops
+                </h1>
+                <!-- mobilebutton_11 --><!--
+                --><a data-role="button" name="mobilebutton_11" dsid="mobilebutton_11" class="crops_mobilebutton_11 ui-btn-left"
+                style='min-height:16px; ' id="crops_mobilebutton_11" data-corners="false" data-icon="bars"
+                data-iconpos="left" x-apple-data-detectors="false" data-inline='true' data-mini='true'
+                data-theme="a" tabindex="2">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="crops_mobilecontainer" name="mobilecontainer" class="bo  crops_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="a">
+                <link href="crops.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="crops.js">
+                </script>
+                <!-- spacer_21 -->
+                <div id="crops_spacer_21" data-role="appery_spacer" dsid="spacer_21" class='mobilespacer crops_spacer_21'>
+                </div>
+                <!-- mobileworkarea_18 -->
+                <div class="crops_mobileworkarea_18 crops_mobileworkarea_18">
+                    <!-- spacer_88 -->
+                    <div id="crops_spacer_88" data-role="appery_spacer" dsid="spacer_88" class='mobilespacer crops_spacer_88'>
+                    </div>
+                    <!-- mobilelabel_67 -->
+                    <div name="mobilelabel_67" id="crops_mobilelabel_67" dsid="mobilelabel_67" data-role="appery_label"
+                    class="font  crops_mobilelabel_67">
+                        Select a crop:
+                    </div>
+                    <!-- html_86 -->
+                    <div data-role="appery_html" name="html_86" dsid="html_86" id="crops_html_86" class="crops_html_86">
+                        <!DOCTYPE html>
+                        <html>
+                            
+                            <body>
+                                <select>
+                                    <option value="paddy">
+                                        paddy
+                                    </option>
+                                    <option value="cotton">
+                                        cotton
+                                    </option>
+                                    <option value="tobacco">
+                                        tobbaco
+                                    </option>
+                                </select>
+                            </body>
+                        
+                        </html>
+                    </div>
+                    <!-- getinfo1 --><!--
+                    --><a data-role="button" name="getinfo1" dsid="getinfo1" class="body  crops_getinfo1"
+                    id="crops_getinfo1" data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                    data-inline="true" data-mini="true" data-theme="c" tabindex="9">
+                    Get info
+                    </a><!--
+                    --><!-- mobilebutton_87 --><!--
+                    --><a data-role="button" name="mobilebutton_87" dsid="mobilebutton_87" class="crops_mobilebutton_87"
+                    id="crops_mobilebutton_87" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                    x-apple-data-detectors="false" data-inline="true" data-mini="true" data-theme="d"
+                    tabindex="10">
+                    Dealers Can  Login Here
+                    </a>
+                </div>
+            </div>
+            <!-- panel_2 -->
+            <div data-role="panel" tabindex="-1" data-position="left" data-display="push" id="crops_panel_2"
+            class="img  crops_panel_2" name="panel_2" dsid="panel_2" data-theme="a">
+                <!-- mobileimage_3 -->
+                <img class="crops_mobileimage_3" src="files/views/assets/image/telanganalogo.png"
+                id="crops_mobileimage_3" dsid="mobileimage_3" name="mobileimage_3" />
+                <!-- mobilelabel_20 -->
+                <div name="mobilelabel_20" id="crops_mobilelabel_20" dsid="mobilelabel_20" data-role="appery_label"
+                class="font  crops_mobilelabel_20">
+                    AgroAlly
+                </div>
+                <!-- Crops --><!--
+                --><a data-role="button" name="Crops" dsid="Crops" class="btn  crops_Crops" id="crops_Crops"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="c" tabindex="4">
+                crops
+                </a><!--
+                --><!-- Insurance --><!--
+                --><a data-role="button" name="Insurance" dsid="Insurance" class="btn  crops_Insurance"
+                id="crops_Insurance" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="c" tabindex="5">
+                Insurance
+                </a><!--
+                --><!-- Agrotips --><!--
+                --><a data-role="button" name="Agrotips" dsid="Agrotips" class="btn  crops_Agrotips"
+                id="crops_Agrotips" data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="c" tabindex="6">
+                Agrotips
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

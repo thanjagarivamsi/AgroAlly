@@ -1,0 +1,424 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#deler_det_mobilebutton_11 {
+
+}
+.ui-btn.deler_det_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.deler_det_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.deler_det_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.deler_det_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* spacer_75 */
+.deler_det_spacer_75 {
+	width: 260px; height: 44px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegrid_21 */
+.deler_det_mobilegrid_21 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.deler_det_mobilegrid_21_wrapper {
+
+}
+.deler_det_mobilegrid_21 > tr > td {
+	vertical-align: top;
+}
+.deler_det_mobilegrid_21_row_0, .deler_det_mobilegrid_21_row_0 > td {
+	height: 37px
+}
+.deler_det_mobilegrid_21_row_1, .deler_det_mobilegrid_21_row_1 > td {
+	height: 30px
+}
+.deler_det_mobilegrid_21_row_2, .deler_det_mobilegrid_21_row_2 > td {
+	height: 30px
+}
+/* mobilegridcell_22 */
+.deler_det_mobilegridcell_22 {
+	height:37px !important;
+	width:147px;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_46 */
+.deler_det_mobilegrid_46 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.deler_det_mobilegrid_46_wrapper {
+
+}
+.deler_det_mobilegrid_46 > tr > td {
+	vertical-align: top;
+}
+.deler_det_mobilegrid_46_row_0, .deler_det_mobilegrid_46_row_0 > td {
+	height: 30px
+}
+.deler_det_mobilegrid_46_row_1, .deler_det_mobilegrid_46_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_47 */
+.deler_det_mobilegridcell_47 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_47 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* price */
+.deler_det_price {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_48 */
+.deler_det_mobilegridcell_48 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_48 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_52 */
+.deler_det_mobilelabel_52 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_49 */
+.deler_det_mobilegridcell_49 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_49 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_53 */
+.deler_det_mobilelabel_53 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_50 */
+.deler_det_mobilegridcell_50 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_50 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_54 */
+.deler_det_mobilelabel_54 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_35 */
+#deler_det_mobilebutton_35 {
+
+}
+.ui-btn.deler_det_mobilebutton_35 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_24 */
+.deler_det_mobilegridcell_24 {
+	height:30px !important;
+	width:147px;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* spacer_73 */
+.deler_det_spacer_73 {
+	width: 260px; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegrid_55 */
+.deler_det_mobilegrid_55 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.deler_det_mobilegrid_55_wrapper {
+
+}
+.deler_det_mobilegrid_55 > tr > td {
+	vertical-align: top;
+}
+.deler_det_mobilegrid_55_row_0, .deler_det_mobilegrid_55_row_0 > td {
+	height: 30px
+}
+.deler_det_mobilegrid_55_row_1, .deler_det_mobilegrid_55_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_56 */
+.deler_det_mobilegridcell_56 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_56 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_60 */
+.deler_det_mobilelabel_60 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_57 */
+.deler_det_mobilegridcell_57 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_57 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_61 */
+.deler_det_mobilelabel_61 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_58 */
+.deler_det_mobilegridcell_58 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_58 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_62 */
+.deler_det_mobilelabel_62 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_59 */
+.deler_det_mobilegridcell_59 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_59 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_63 */
+.deler_det_mobilelabel_63 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_37 */
+#deler_det_mobilebutton_37 {
+
+}
+.ui-btn.deler_det_mobilebutton_37 {
+	margin: 4px 5px 4px 5px;
+}
+/* spacer_74 */
+.deler_det_spacer_74 {
+	width: 260px; height: 34px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_43 */
+.deler_det_mobilegridcell_43 {
+	height:30px !important;
+	width:147px;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_43 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegrid_64 */
+.deler_det_mobilegrid_64 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.deler_det_mobilegrid_64_wrapper {
+
+}
+.deler_det_mobilegrid_64 > tr > td {
+	vertical-align: top;
+}
+.deler_det_mobilegrid_64_row_0, .deler_det_mobilegrid_64_row_0 > td {
+	height: 30px
+}
+.deler_det_mobilegrid_64_row_1, .deler_det_mobilegrid_64_row_1 > td {
+	height: 30px
+}
+/* mobilegridcell_65 */
+.deler_det_mobilegridcell_65 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_65 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_69 */
+.deler_det_mobilelabel_69 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_66 */
+.deler_det_mobilegridcell_66 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_66 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_70 */
+.deler_det_mobilelabel_70 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_67 */
+.deler_det_mobilegridcell_67 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_67 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_71 */
+.deler_det_mobilelabel_71 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_68 */
+.deler_det_mobilegridcell_68 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.deler_det_mobilegridcell_68 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_72 */
+.deler_det_mobilelabel_72 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_45 */
+#deler_det_mobilebutton_45 {
+
+}
+.ui-btn.deler_det_mobilebutton_45 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.deler_det_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.deler_det_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.deler_det_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.deler_det_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 203px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.deler_det_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#deler_det_Crops {
+
+}
+.ui-btn.deler_det_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#deler_det_Insurance {
+
+}
+.ui-btn.deler_det_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#deler_det_Agrotips {
+
+}
+.ui-btn.deler_det_Agrotips {
+	margin: 4px 5px 4px 5px;
+}

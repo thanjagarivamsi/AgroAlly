@@ -1,0 +1,71 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilebutton_11 */
+#Screen4_mobilebutton_11 {
+
+}
+.ui-btn.Screen4_mobilebutton_11 {
+
+}
+/* mobilecontainer */
+.ui-content.Screen4_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* spacer_21 */
+.Screen4_spacer_21 {
+	width: 260px; height: 88px;
+	margin: 4px 0px 4px 0px;
+}
+/* mobileworkarea_18*/
+.Screen4_mobileworkarea_18 {
+	background-color: transparent;
+	padding: 0px;
+}
+/* mobilefooter */
+.Screen4_mobilefooter {
+	min-height:38px;
+}
+/* panel_2 */
+.Screen4_panel_2 .ui-panel-inner {
+	padding: 15px 15px 15px 15px;
+}
+.Screen4_panel_2:focus {
+	outline: 0;
+}
+/* mobileimage_3 */
+.Screen4_mobileimage_3 {
+	margin: 4px 0px 8px 25px;
+	width: 203px; height: 191px;
+	display: block;
+}
+/* mobilelabel_20 */
+.Screen4_mobilelabel_20 {
+	text-decoration: none; font-weight: bold; color: #006400; text-align: center; font-family: Georgia; font-size: 36px;
+	margin: 4px 0px 20px 20px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* Crops */
+#Screen4_Crops {
+
+}
+.ui-btn.Screen4_Crops {
+	margin: 4px 5px 4px 5px;
+}
+/* Insurance */
+#Screen4_Insurance {
+
+}
+.ui-btn.Screen4_Insurance {
+	margin: 4px 5px 4px 5px;
+}
+/* Agrotips */
+#Screen4_Agrotips {
+
+}
+.ui-btn.Screen4_Agrotips {
+	margin: 4px 5px 4px 5px;
+}
